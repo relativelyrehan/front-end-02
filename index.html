@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <header>
+      <div class="user">
+        <span>User</span>
+        <h1>rock</h1>
+        <h1>paper</h1>
+        <h1>Scissors</h1>
+      </div>
+      <div class="computer">
+        <span>Computer</span>
+        <h1>rock</h1>
+        <h1>paper</h1>
+        <h1>Scissors</h1>
+      </div>
+      <div class="scoreboard">
+        <span>score</span>
+        <h1 class="score"></h1>
+        <span class="verdict"></span>
+      </div>
+    </header>
+    <main class="game">
+      <div class="main">
+        <div class="wrapper paper">
+          <img
+            class="bg-triangle"
+            src="./images/bg-triangle.svg"
+            alt="bg-triangle"
+          />
+          <span>
+            <img src="./images/icon-paper.svg" alt="paper" />
+          </span>
+        </div>
+        <div class="wrapper scissor">
+          <span>
+            <img src="./images/icon-scissors.svg" alt="paper" />
+          </span>
+        </div>
+      </div>
+      <div class="wrapper rock">
+        <span>
+          <img src="./images/icon-rock.svg" alt="paper" />
+        </span>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

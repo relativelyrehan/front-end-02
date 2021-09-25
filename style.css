@@ -1,0 +1,123 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: radial-gradient(
+    circle at 50%,
+    hsl(214, 47%, 23%),
+    hsl(237, 49%, 15%)
+  );
+  min-height: 100vh;
+  padding: 24px;
+  font-family: "Barlow", sans-serif;
+}
+
+header {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 2px solid hsl(217, 16%, 45%);
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1,
+header span {
+  text-transform: uppercase;
+  color: hsl(0, 100%, 100%);
+}
+
+.scoreboard {
+  background: hsl(0, 100%, 100%);
+  height: 100%;
+  padding: 24px 32px;
+  border-radius: 10px;
+}
+
+.scoreboard span {
+  color: hsl(229, 25%, 31%);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.scoreboard h1 {
+  color: hsl(229, 25%, 31%);
+  font-weight: 800;
+  font-size: 36px;
+  text-align: center;
+}
+
+.main,
+.wrapper,
+.wrapper span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  padding: 96px;
+  flex-wrap: wrap;
+  gap: 132px;
+}
+
+.wrapper {
+  height: 160px;
+  width: 160px;
+  border-radius: 1000px;
+  cursor: pointer;
+}
+
+.paper {
+  background-image: linear-gradient(
+    to right,
+    hsl(230, 89%, 62%),
+    hsl(230, 89%, 65%)
+  );
+  position: relative;
+}
+
+.bg-triangle {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  left: 50%;
+  z-index: -10;
+}
+
+.scissor {
+  background-image: linear-gradient(
+    to right,
+    hsl(349, 71%, 52%),
+    hsl(349, 70%, 56%)
+  );
+}
+
+.rock {
+  background-image: linear-gradient(
+    to right,
+    hsl(39, 89%, 49%),
+    hsl(40, 84%, 53%)
+  );
+  margin: 0 auto;
+}
+
+.wrapper span {
+  background: hsl(0, 100%, 100%);
+  height: 120px;
+  width: 120px;
+  border-radius: 1000px;
+}
+
+.verdict {
+  text-align: center;
+  display: block;
+}
