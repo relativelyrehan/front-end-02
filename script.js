@@ -6,6 +6,20 @@ const user = document.querySelectorAll(".user h1");
 const computer = document.querySelectorAll(".computer h1");
 const verdict = document.querySelector(".verdict");
 
+// FOR MODAL
+
+const opener = document.querySelector(".rules");
+const closer = document.querySelector(".close");
+const modal = document.querySelector(".modal-container");
+
+opener.addEventListener("click", function () {
+  modal.classList.remove("hidden");
+});
+
+closer.addEventListener("click", function () {
+  modal.classList.add("hidden");
+});
+
 const wrapper = document.querySelectorAll(".wrapper");
 
 const availableSelections = [
@@ -22,18 +36,8 @@ scoreBoard.innerHTML = score;
 
 wrapper.forEach((item) => {
   item.addEventListener("click", function () {
-    if (useSelection) {
-      user[useSelection - 1].style.color = "#FFF";
-    }
-
-    if (computerSelection) {
-      computer[computerSelection - 1].style.color = "#FFF";
-    }
     computerSelection = Math.floor(Math.random() * 3 + 1);
     useSelection = availableSelections.indexOf(this.className) + 1;
-
-    user[useSelection - 1].style.color = "green";
-    computer[computerSelection - 1].style.color = "red";
 
     if (
       (useSelection === 1 && computerSelection === 3) ||

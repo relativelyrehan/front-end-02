@@ -76,6 +76,16 @@ header span {
   cursor: pointer;
 }
 
+.wrapper span {
+  transition: 0.3s ease-in;
+}
+
+.wrapper span:hover {
+  transform: translateY(-10px);
+  box-shadow: 16px 24px 2px rgba(0, 0, 0, 0.14),
+    0px 6px 30px 5px rgba(0, 0, 0, 0.12), 0px 8px 10px -7px rgba(0, 0, 0, 0.2);
+}
+
 .paper {
   background-image: linear-gradient(
     to right,
@@ -83,14 +93,6 @@ header span {
     hsl(230, 89%, 65%)
   );
   position: relative;
-}
-
-.bg-triangle {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  left: 50%;
-  z-index: -10;
 }
 
 .scissor {
@@ -120,4 +122,60 @@ header span {
 .verdict {
   text-align: center;
   display: block;
+}
+
+.modal-container {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  backdrop-filter: blur(10px);
+}
+
+.rules {
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  padding: 10px 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.rules:hover {
+  background-color: white;
+  color: #000;
+}
+
+.modal {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid;
+  padding: 48px;
+  max-width: max-content;
+  position: relative;
+}
+
+.close {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  font-size: 24px;
+  color: #0a0a0a;
+}
+
+.hidden {
+  display: none;
 }

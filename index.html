@@ -28,12 +28,6 @@
         <h1>paper</h1>
         <h1>Scissors</h1>
       </div>
-      <div class="computer">
-        <span>Computer</span>
-        <h1>rock</h1>
-        <h1>paper</h1>
-        <h1>Scissors</h1>
-      </div>
       <div class="scoreboard">
         <span>score</span>
         <h1 class="score"></h1>
@@ -43,11 +37,6 @@
     <main class="game">
       <div class="main">
         <div class="wrapper paper">
-          <img
-            class="bg-triangle"
-            src="./images/bg-triangle.svg"
-            alt="bg-triangle"
-          />
           <span>
             <img src="./images/icon-paper.svg" alt="paper" />
           </span>
@@ -64,6 +53,13 @@
         </span>
       </div>
     </main>
+    <button class="rules">Rules</button>
+    <section class="modal-container hidden">
+      <div class="modal">
+        <img src="./images/image-rules.svg" alt="" />
+        <button class="close">x</button>
+      </div>
+    </section>
     <script src="./script.js"></script>
   </body>
 </html>
